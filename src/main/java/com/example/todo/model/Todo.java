@@ -22,7 +22,7 @@ public class Todo {
 
     public Todo(int id, String todo, String priority, String status){
         this.id=id;
-        this.todo todo;
+        this.todo=todo;
         this.priority=priority;
         this.status=status;
     }
@@ -40,7 +40,7 @@ public class Todo {
     }
 
     public void setTodo (String todo){
-        this.todo todo;
+        this.todo=todo;
     }
 
     public String getPriority(){
