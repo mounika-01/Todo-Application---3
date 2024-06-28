@@ -42,7 +42,7 @@ public Todo getTodoById(int id) {
 
 try {
 
-Todo todo todoJpaRepository.findById(id).get();
+Todo todo= todoJpaRepository.findById(id).get();
 
 return todo;
 
@@ -71,8 +71,7 @@ try {
 Todo newTodo todoJpaRepository.findById(id).get();
 
 if (todo.getTodo() != null) {
-
-newTodo.setTodo (todo.getTodo());
+    newTodo.setTodo(todo.getTodo());
 }
 if(todo.getStatus() != null){
     newTodo.setStatus(todo.getStatus());
