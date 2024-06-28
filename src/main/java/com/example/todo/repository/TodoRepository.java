@@ -8,7 +8,7 @@ public interface TodoRepository{
 
 ArrayList<Todo>getTodos();
 
-Todo get TodoById(int id);
+Todo getTodoById(int id);
 
 Todo addTodo (Todo todo);
 
